@@ -16,7 +16,7 @@ app.use(Morgan('dev'))
 
 
 const path=require('path');
-app.use(express.static(path.join(__dirname+'/dist/frontend')));
+app.use(Express.static(path.join(__dirname+'./dist/frontend')));
 //api
 const api = require('./routes/api')
 app.use('/api',api)
